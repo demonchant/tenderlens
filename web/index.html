@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f2efe8"><title>TenderLens — Change desk</title>
+  <link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topline"><a class="wordmark" href="index.html"><span class="brand-mark">T<span>↗</span></span><span>TENDERLENS<small>PUBLIC NOTICE CHANGE DESK</small></span></a><div class="topline-right"><span class="mode-pill live-mode"><i></i> LIVE TED SOURCE</span><span class="edition">TESTNET SUBNET / BUILD IN PROGRESS</span></div></header>
+  <nav class="page-nav" aria-label="Main navigation"><a class="active" aria-current="page" href="index.html"><span>01</span> Desk</a><a href="compare.html"><span>02</span> Compare</a><a href="mechanism.html"><span>03</span> Mechanism</a><a href="scoring.html"><span>04</span> Scoring</a></nav>
+  <main id="main" class="page-shell live-home">
+    <section class="hero-grid enter">
+      <div class="hero-copy"><p class="eyebrow"><span class="eyebrow-line"></span> PUBLIC PROCUREMENT / VERSION TRACE</p><h1>Find the seam<br>between <em>editions.</em></h1><p class="lede">Look up a real TED publication. TenderLens retrieves its published versions and exposes their field changes with source links and record hashes.</p><a class="round-link" href="#lookup"><span>Open the live lookup</span><b aria-hidden="true">↘</b></a></div>
+      <div class="home-ornament" aria-hidden="true"><div class="orbital orbital-a"></div><div class="orbital orbital-b"></div><div class="orbit-core">TED<br><small>LIVE</small></div><div class="orbit-label orbit-nw">PUBLIC SOURCE<br>NO LOCAL CORPUS</div><div class="orbit-label orbit-se">VERSION<br>IDENTITY</div><span class="orbit-glyph">Δ</span></div>
+    </section>
+    <section class="live-lookup enter delay-1" id="lookup" aria-labelledby="lookup-title"><div class="lookup-heading"><p class="eyebrow">01 / RETRIEVE SOURCE</p><h2 id="lookup-title">Start with a publication number.</h2><p>Use the number printed by TED, for example <code>123456-2026</code>. Every result is fetched at request time. There is no sample record or offline fallback.</p></div>
+      <form id="publication-form" class="lookup-form"><label for="publication-input">TED publication number</label><div class="lookup-control"><input id="publication-input" name="publication" autocomplete="off" inputmode="numeric" pattern="[0-9]{1,8}-20[0-9]{2}" placeholder="000000-2026" required aria-describedby="publication-hint"><button type="submit" id="lookup-submit"><span>Fetch editions</span><b aria-hidden="true">↗</b></button></div><small id="publication-hint">Digits, a hyphen, and publication year. Data comes directly from the TED Search API.</small></form>
+    </section>
+    <section id="lookup-status" class="live-status" aria-live="polite" aria-atomic="true"><span class="status-mark"></span><p>Waiting for a TED publication number.</p></section>
+    <section id="lookup-results" class="lookup-results" hidden aria-live="polite"></section>
+    <section class="principles enter delay-2"><div><span>01</span><strong>One identity</strong><small>Version pairing requires TED's notice identifier.</small></div><div><span>02</span><strong>Source intact</strong><small>Each fetched record carries its source URL and SHA-256 digest.</small></div><div><span>03</span><strong>No silent success</strong><small>Unavailable or unpaired data is shown as a failure state.</small></div></section>
+    <section class="bottom-callout enter delay-3"><p class="eyebrow">THE SUBNET MECHANISM</p><h2>Reward a change that <em>survives checking.</em></h2><div><p>Miners return structured deltas; validators recompute the source comparison, score omissions and false changes, then propose relative Bittensor weights.</p><a class="circle-arrow" href="mechanism.html" aria-label="Explore the mechanism">↗</a></div></section>
+  </main>
+  <footer class="site-footer"><span>TENDERLENS <b>·</b> LIVE TED LOOKUP</span><span>CHAIN STATUS: NOT CONNECTED</span><a href="scoring.html">Scoring contract ↗</a></footer>
+</body></html>

@@ -1,0 +1,22 @@
+{
+  "endpoint": "https://api.ted.europa.eu/v3/notices/search",
+  "queries": [
+    "ND = 8-2026",
+    "notice-identifier = 851357ca-bd72-44dd-8281-5a77ad6aff86",
+    "change-notice-version-identifier = \"851357ca-bd72-44dd-8281-5a77ad6aff86-01\"",
+    "change-notice-version-identifier = * AND PD >= 20260101"
+  ],
+  "fields": [
+    "ND", "PD", "notice-identifier", "notice-version", "notice-type", "notice-title",
+    "change-description", "change-notice-version-identifier", "change-reason-code",
+    "change-reason-description", "deadline-receipt-tender-date-lot",
+    "deadline-receipt-tender-time-lot", "estimated-value-proc", "estimated-value-cur-proc",
+    "estimated-value-lot", "estimated-value-cur-lot", "organisation-name-buyer",
+    "selection-criterion-description-lot", "procedure-type"
+  ],
+  "limit": 20,
+  "page": 1,
+  "scope": "ALL",
+  "retrieved_at": "2026-10-09",
+  "provenance": "Exact public TED Search API query expressions used during the live source-linkage probe."
+}

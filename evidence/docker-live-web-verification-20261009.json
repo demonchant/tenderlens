@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-09T13:12:44.987009+00:00",
+  "runtime": "Docker Compose web service, rebuilt Linux image",
+  "request": "GET /api/versions?publication=8-2026",
+  "page_status": 200,
+  "health_source_health": "not_checked",
+  "source": "TED",
+  "publication": "8-2026",
+  "records": 4,
+  "explicit_bt758_pairs": 3,
+  "pair_available": true,
+  "truncated": false,
+  "bittensor_sdk": "11.3.0",
+  "sdk_imports": {
+    "miner_module": true,
+    "validator_module": true,
+    "http_auth_sign": true,
+    "http_auth_verify": true,
+    "set_weights": true
+  },
+  "limitations": [
+    "This proves the container UI/API path and SDK imports only.",
+    "No wallet, registered neuron, metagraph, signed miner-validator exchange, or chain transaction was configured or exercised."
+  ]
+}

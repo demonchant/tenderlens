@@ -1,0 +1,52 @@
+services:
+  web:
+    build: .
+    command: ["tenderlens-web"]
+    env_file: .env
+    environment:
+      TL_HOST: 0.0.0.0
+      HOME: /tmp
+      XDG_CACHE_HOME: /tmp/.cache
+    ports:
+      - "127.0.0.1:${TL_PORT:-8787}:${TL_PORT:-8787}"
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+
+  miner:
+    build: .
+    command: ["tenderlens-miner"]
+    env_file: .env
+    environment:
+      BT_WALLET_PATH: /wallets
+      TL_MINER_HOST: 0.0.0.0
+      HOME: /tmp
+      XDG_CACHE_HOME: /tmp/.cache
+    volumes:
+      - "${BT_WALLET_PATH:-./wallets}:/wallets:ro"
+    ports:
+      - "${TL_MINER_PORT:-8091}:${TL_MINER_PORT:-8091}"
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    profiles: [testnet]
+
+  validator:
+    build: .
+    command: ["tenderlens-validator"]
+    env_file: .env
+    environment:
+      BT_WALLET_PATH: /wallets
+      HOME: /tmp
+      XDG_CACHE_HOME: /tmp/.cache
+    volumes:
+      - "${BT_WALLET_PATH:-./wallets}:/wallets:ro"
+      - "./evidence:/app/evidence"
+      - "./data:/app/data"
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    profiles: [testnet]

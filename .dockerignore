@@ -1,0 +1,13 @@
+.git
+.venv
+**/__pycache__
+*.py[cod]
+.env
+.env.*
+!.env.example
+wallets
+data
+evidence/runs
+tests
+docs
+HACKATHON_BUILD_STANDARD_V2.md
