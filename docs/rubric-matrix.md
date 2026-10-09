@@ -31,7 +31,7 @@
 | Subnet proposal | [`subnet-proposal.md`](subnet-proposal.md) | Updated draft; not evidence of checkpoint submission |
 | Functional subnet/miner and validator on testnet | Code and deploy path | Not run; wallet/netuid/permit needed |
 | Evidence mechanism works | Real TED source chain + scoring tests | Live source-link capture and ten local tests pass; miner, validator and testnet runs remain unverified |
-| Public GitHub repository | `https://github.com/demonchant/tenderlens` | Pending reviewed commit push |
+| Public GitHub repository | [`demonchant/tenderlens`](https://github.com/demonchant/tenderlens), `main` at `a4fc08d` | Published; final anonymous visibility check remains |
 | Setup and technical documentation | README/docs | Local draft |
 | Testnet deployment instructions | [`deployment.md`](deployment.md) | Local plan; exact subnet and endpoint not configured |
 | Demo video and final pitch | None | Not created |

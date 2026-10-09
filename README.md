@@ -10,7 +10,7 @@ The subnet task asks each miner to independently fetch the two identified public
 - **Live desk: IMPLEMENTED.** No tender fixture, seeded result, or offline data fallback is present in the app. Source failures remain visible.
 - **Miner and scoring code: IMPLEMENTED, not yet run against Bittensor.** The miner independently reads TED and uses Bittensor v11 signed requests, validator-permit checks, bounded inputs, rate limits, and signed response bodies. The validator independently reads TED and can aggregate one live round for a test subnet.
 - **Testnet: NOT CONFIGURED / NOT VERIFIED.** This workspace has no registered subnet UID, miner/validator wallet configuration, public miner endpoint, or on-chain receipt. `.env` is local and ignored; fill its values only when those real resources are ready. No chain result is claimed.
-- **Hackathon submission: NOT SUBMITTED.** The 20 September proposal checkpoint is past. The HackQuest listing still shows the final deadline as 19 October 2026 at 15:59 (timezone not shown); organizer rules beyond the published description and any prior proposal status need confirmation. A reviewed public GitHub repository is being prepared; no demo video, pitch recording, or submission receipt is present.
+- **Hackathon submission: NOT SUBMITTED.** The 20 September proposal checkpoint is past. The HackQuest listing still shows the final deadline as 19 October 2026 at 15:59 (timezone not shown); organizer rules beyond the published description and any prior proposal status need confirmation. The public repository is [github.com/demonchant/tenderlens](https://github.com/demonchant/tenderlens) (source commit `a4fc08d`); no testnet run, demo video, pitch recording, or submission receipt is present.
 
 ## Judge fast path
 
