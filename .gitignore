@@ -1,5 +1,7 @@
 .env
 .venv/
+HACKATHON_BUILD_STANDARD_V2.md
+HACKATHON_REBUILD_PLAYBOOK.md
 __pycache__/
 *.py[cod]
 .pytest_cache/

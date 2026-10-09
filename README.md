@@ -82,8 +82,6 @@ Docker commands are documented in [`docs/deployment.md`](docs/deployment.md). Te
 
 ## Repository map
 
-- [`HACKATHON_REBUILD_PLAYBOOK.md`](HACKATHON_REBUILD_PLAYBOOK.md) — reusable procedure for carrying a future hackathon project from event rules through a Docker-tested, evidence-backed, environment-ready build, with the TenderLens path recorded as a worked example.
-
 - `web/` — live-source editorial UI. Each page has a direct navigation link to every other page.
 - `tenderlens/ted.py` — bounded TED Search API client, explicit amendment-link traversal, hashes, and structural delta.
 - `tenderlens/miner.py` — signed Bittensor v11 miner API and independent TED fetch.
